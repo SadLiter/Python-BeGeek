@@ -6,7 +6,7 @@
 Если в списке нечетное количество элементов, то последний остается на своем месте.
 '''
 
-numbers = list(map(int, input().split()))
+numbers = input().split()
 length = len(numbers)
 
 for i in range(0, length - length % 2, 2):
