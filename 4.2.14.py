@@ -4,6 +4,11 @@
 # вложенных списков списка list1.
 
 list1 = [[1, 7, 8], [9, 7, 102], [6, 106, 105], [100, 99, 98, 103], [1, 2, 3]]
-maximum = max(max(list1))
+
+maximum = 0
+
+for numbers in list1:
+    if max(numbers) >= maximum:
+        maximum = max(numbers)
 
 print(maximum)
